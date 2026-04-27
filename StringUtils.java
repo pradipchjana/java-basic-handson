@@ -4,9 +4,9 @@ class StringUtils {
   }
 
   static boolean containsChar(String str, char c) {
-    
-    for(int i = 0; i<str.length();i++){
-      if(str.charAt(i)==c) return true;
+
+    for(int i = 0; i<str.length(); i++){
+      if(str.charAt(i) == c) return true;
     }
 
     return false;
@@ -15,7 +15,7 @@ class StringUtils {
   static String reverse(String str) {
     String reverse = "";
 
-    for(int i = str.length()-1; i>=0;i--){
+    for(int i = str.length() - 1; i >= 0; i--){
       reverse += str.charAt(i);
     }
 
@@ -25,9 +25,9 @@ class StringUtils {
   static String replaceAll(String str, char a, char b) {
     String newString = "";
 
-    for(int i = 0; i<str.length();i++){
+    for(int i = 0; i < str.length(); i++){
 
-      if(str.charAt(i)==a){
+      if(str.charAt(i) == a){
         newString += b;
 
       }else{

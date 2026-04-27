@@ -1,17 +1,17 @@
 class Money {
-  int value;
+  final int value;
   
   Money(int value){
     this.value = value;
   }
 
   Money add( Money m){
-    int addResult = this.value + m.value;
-    return new Money(addResult);
+    int newAmount = this.value + m.value;
+    return new Money(newAmount);
   }
 
     Money minus( Money m){
-    int addResult = this.value - m.value;
-    return new Money(addResult);
+    int newAmount = this.value - m.value;
+    return new Money(newAmount);
   }
 }
