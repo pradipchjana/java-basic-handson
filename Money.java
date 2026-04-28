@@ -5,13 +5,13 @@ class Money {
     this.value = value;
   }
 
-  Money add( Money m){
-    int newAmount = this.value + m.value;
+  Money add( Money money){
+    int newAmount = this.value + money.value;
     return new Money(newAmount);
   }
 
-    Money minus( Money m){
-    int newAmount = this.value - m.value;
+    Money minus( Money money){
+    int newAmount = this.value - money.value;
     return new Money(newAmount);
   }
 }

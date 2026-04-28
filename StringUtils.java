@@ -3,10 +3,10 @@ class StringUtils {
     System.out.println("do nothing");
   }
 
-  static boolean containsChar(String str, char c) {
+  static boolean containsChar(String str, char target) {
 
     for(int i = 0; i<str.length(); i++){
-      if(str.charAt(i) == c) return true;
+      if(str.charAt(i) == target) return true;
     }
 
     return false;
@@ -22,13 +22,13 @@ class StringUtils {
     return reverse;
   }
 
-  static String replaceAll(String str, char a, char b) {
+  static String replaceAll(String str, char replace, char replacer) {
     String newString = "";
 
     for(int i = 0; i < str.length(); i++){
 
-      if(str.charAt(i) == a){
-        newString += b;
+      if(str.charAt(i) == replace){
+        newString += replacer;
 
       }else{
       newString += str.charAt(i);
